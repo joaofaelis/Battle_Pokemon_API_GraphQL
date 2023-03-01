@@ -1,0 +1,9 @@
+
+input pokemon_src {
+    src_pokemon: Int!
+}
+
+extend type Query{
+    src_pokemon(input: pokemon_src): pokemon_id
+
+}

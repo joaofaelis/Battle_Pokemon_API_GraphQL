@@ -1,0 +1,12 @@
+
+input Update {
+    id: String!
+    name: String!
+    age: Int!
+    gender: String!
+    status: Boolean!
+}
+
+extend type Mutation {
+    Update_trainer (input: Update! ): String
+}

@@ -1,0 +1,8 @@
+input BattleInput {
+    trainer_one_id: String!
+    trainer_two_id: String!
+}
+
+extend type Mutation {
+    start_Battle(input: BattleInput): find_battle
+}

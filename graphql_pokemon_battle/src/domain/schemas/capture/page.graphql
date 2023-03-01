@@ -1,0 +1,12 @@
+type find_capture{
+    data: [capture]
+}
+
+input find_all_capture{
+    skip: Int!
+    limit: Int!
+}
+
+extend type Query {
+    page_capture(input: find_all_capture): find_capture
+}

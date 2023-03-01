@@ -1,0 +1,13 @@
+input skip_limit{
+    skip: Int!
+    limit: Int!
+}
+
+type pokemons{
+    data: [pokemon_id]
+
+}
+
+extend type Query{
+    page_pokemons(input: skip_limit): pokemons
+}

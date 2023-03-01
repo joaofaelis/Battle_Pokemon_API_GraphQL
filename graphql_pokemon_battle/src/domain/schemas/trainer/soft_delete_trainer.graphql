@@ -1,0 +1,9 @@
+input SoftDelete {
+    id: String!
+    status: Boolean!
+}
+
+extend type Mutation {
+    soft_delete_trainer(input: SoftDelete! ): String
+}
+

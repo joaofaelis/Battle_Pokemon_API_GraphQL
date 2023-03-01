@@ -1,0 +1,18 @@
+type find_battle {
+    trainer_winner_id: String,
+    pokemon_id: String,
+    pokemon: String,
+    number_pokemon: Int,
+    name_pokemon: String,
+    weight: Int,
+    experience: Int,
+    battle: String
+}
+
+input battleinput{
+    winner_battle_id: String!
+}
+
+extend type Query{
+    find_winner_battle(input: battleinput): find_battle
+}

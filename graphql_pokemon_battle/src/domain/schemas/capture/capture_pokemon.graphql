@@ -1,0 +1,9 @@
+input capture_pokemon{
+    trainer_id: String,
+    number_pokemon: Int,
+    name_pokemon: String
+}
+
+extend type Mutation {
+    capture_pokemon(input: capture_pokemon): capture
+}

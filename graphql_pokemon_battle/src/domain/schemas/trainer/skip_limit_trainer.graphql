@@ -1,0 +1,13 @@
+input skiplimit{
+    skip: Int!
+    limit: Int!
+}
+
+type trainers{
+    data: [Trainer]
+
+}
+
+extend type Query{
+    page_trainers(input: skiplimit): trainers
+}

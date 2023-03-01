@@ -1,0 +1,21 @@
+input trainerInput {
+    id: String!
+}
+
+type trainer {
+    id: String
+    name: String
+    age: Int
+    gender: String
+    status: Boolean
+    created_dat: Int
+}
+
+type Query {
+    find_trainer(input: trainerInput): trainer
+
+}
+
+
+
+

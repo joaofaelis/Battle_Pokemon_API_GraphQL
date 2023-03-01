@@ -1,0 +1,19 @@
+type insert {
+    number_pokemon: Int,
+    poke_id : String,
+    pokemon: String,
+    weight: Int,
+    experience: Int,
+    status: Boolean,
+    created_dat: String
+
+}
+
+input pokemon {
+    number_pokemon: Int!
+
+}
+
+extend type Mutation {
+    insert_pokemon(input: pokemon ): insert
+}

@@ -1,0 +1,22 @@
+type pokemon_id{
+    number_pokemon: Int,
+    poke_id: String,
+    pokemon: String,
+    weight: Int,
+    experience: Int,
+    status: Boolean,
+    created_dat: String
+}
+
+input pokemonInput {
+    poke_id: String!
+}
+
+extend type Query{
+    INATIVO(input: pokemonInput): pokemon_id
+
+}
+
+
+
+

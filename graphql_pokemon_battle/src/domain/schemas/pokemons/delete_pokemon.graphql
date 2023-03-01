@@ -1,0 +1,4 @@
+
+extend type Mutation {
+    deletePokemon(input: pokemonInput): String
+}

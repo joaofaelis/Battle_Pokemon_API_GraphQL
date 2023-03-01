@@ -1,0 +1,19 @@
+type capture {
+    trainer_id: String,
+    poke_id: String,
+    pokemon: String,
+    number_pokemon:Int,
+    name_pokemon: String,
+    weight: Int,
+    experience: Int,
+    captured_in: String
+}
+
+input captureInput {
+    trainer_id: String!
+}
+
+extend type Query {
+    find_captureds(input: captureInput): capture
+}
+

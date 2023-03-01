@@ -1,0 +1,23 @@
+
+input Created {
+    name: String!
+    gender: String!
+    age: Int!
+    status: Boolean!
+
+
+
+}
+
+type Trainer {
+    name: String,
+    gender: String,
+    age: Int,
+    created_dat: String,
+    status: Boolean
+
+}
+
+type Mutation {
+    insert_trainer(input: Created! ): String
+}

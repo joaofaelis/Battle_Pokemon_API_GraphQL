@@ -1,0 +1,9 @@
+input delete_pokemon {
+    id: String!
+
+}
+
+extend type Mutation {
+    soft_delete_pokemon(input: delete_pokemon ): String
+}
+
